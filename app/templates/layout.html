@@ -5,7 +5,7 @@
 	<title>{{ title }}</title>
 	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
 
-	<!-- for-mobile-apps -->
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -122,25 +122,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 		crossorigin="anonymous"></script>
 	</body>
-	<!-- css files -->
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
-	<!-- bootstrap css -->
+	
 	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
-	<!-- custom css -->
-	<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet"><!-- fontawesome css -->
-	<!-- //css files -->
-	<!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png?') }}"> -->
+
+	<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
 
 
 	<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
 
 
-	<!-- google fonts -->
+	
 	<link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
 		rel="stylesheet">
-	<!-- //google fonts -->
+	
 
 	<style>
 		header {
@@ -154,11 +152,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 
-	<!-- Navigation -->
+	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #22da4600;">
 		<div class="container">
 			<a class="navbar-brand" href="{{ url_for('home') }}">
-				<img src="{{ url_for('static', filename='images/logo.png') }}" style="width: 100px; height: 75px" alt="">
+				<img src="{{ url_for('static', filename='images/logo.png') }}" style="width: 115px; height: 100px" alt="">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -190,6 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a class="nav-link" href="{{url_for('contact_us') }}">Contact Us</a>
 					</li>
 				</ul>
+				<div id="google_translate_element" style="margin-left: 4px;"></div>
 			</div>
 		</div>
 	</nav>
@@ -199,24 +198,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	{% block body %} {% endblock %}
 
-	<!-- footer -->
+	
 	<footer class="text-center py-5">
 		<div class="container py-md-3">
-			<!-- logo -->
+			
 			<h2 class="logo2 text-center">
 				<a href="{{ url_for('home') }}">
 					Farmington
 				</a>
 			</h2>
-			<!-- //logo -->
-			<!-- address -->
+			
 			<div class="contact-left-footer mt-4">
 
 
-
-
-
-				<!-- <a href="community.html">Community</a> -->
 				</p>
 			</div>
 			<div class="w3l-copy text-center">
@@ -228,11 +222,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</footer>
-	<!-- //footer -->
-
-	<!-- move top icon -->
+	
 	<a href="#home" class="move-top text-center"></a>
-	<!-- //move top icon -->
+	
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>

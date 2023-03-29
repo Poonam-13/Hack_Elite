@@ -182,13 +182,15 @@ def crop_prediction():
 @ app.route('/fertilizer-predict', methods=['POST'])
 def fert_recommend():
     title = 'Farmington - Fertilizer Suggestion'
+    print(request.form)
+    print(dict(request.form))
 
     crop_name = str(request.form['cropname'])
     N = int(request.form['nitrogen'])
     P = int(request.form['phosphorous'])
     K = int(request.form['pottasium'])
 
-    df = pd.read_csv('Data/fertilizer.csv')
+    df = pd.read_csv('./Data/fertilizer.csv')
 
     nr = df[df['Crop'] == crop_name]['N'].iloc[0]
     pr = df[df['Crop'] == crop_name]['P'].iloc[0]

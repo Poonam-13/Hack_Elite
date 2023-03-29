@@ -23,6 +23,12 @@ body img {
     max-width: 100%;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+
 a:hover {
     text-decoration: none;
 }
@@ -92,8 +98,6 @@ ul {
 }
 
 
-/*-- header --*/
-
 header {
     position: absolute;
     z-index: 9;
@@ -105,7 +109,6 @@ header {
 	display: none;
 }
 
-/* Giving a background-color to the nav container. */
 nav { 
 	margin:0;
 	padding: 0;
@@ -129,17 +132,13 @@ nav {
 }
 
 
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
 nav:after {
 	content:"";
 	display:table;
 	clear:both;
 }
 
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
+
 nav ul {
 	float: right;
 	padding:0;
@@ -148,14 +147,13 @@ nav ul {
 	position: relative;
 	}
 	
-/* Positioning the navigation items inline */
+
 nav ul li {
 	margin: 0px;
 	display:inline-block;
 	/* float: left; */
 	}
 
-/* Styling the links */
 nav a {
     color: #ddd;
     text-transform: capitalize;
@@ -169,7 +167,6 @@ nav a {
 
 nav ul li ul li:hover { background: #f8f9fa; }
 
-/* Background color change on Hover */
 nav a:hover { 
 	color: #ddd;
 }
@@ -177,23 +174,20 @@ nav a:hover {
 	color: #fff;
 }
 
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
+
 nav ul ul {
 	display: none;
 	position: absolute; 
-	/* has to be the same number as the "line-height" of "nav a" */
 	top: 30px; 
     background: #fff;
     padding: 10px;
 }
-	
-/* Display Dropdowns on Hover */
+
 nav ul li:hover > ul {
 	display:inherit;
 }
 	
-/* Fisrt Tier Dropdown */
+
 nav ul ul li {
 	width:170px;
 	float:none;
@@ -216,23 +210,16 @@ nav ul li span {
 ul.menu li span.fa {
     color: #e8cd30;
 }
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
+
 nav ul ul ul li {
 	position: relative;
 	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
 	left:170px; 
 }
 
-/* Change ' +' in order to change the Dropdown symbol */
 li > a:only-child:after { content: ''; }
 
 
-/* Media Queries
---------------------------------------------- */
 
 @media all and (max-width : 991px) {
 
@@ -256,14 +243,13 @@ li > a:only-child:after { content: ''; }
 		color: #333;
 	}
 
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
+
 	.toggle + a,
 	.menu {
 		display: none;
 	}
 
-	/* Stylinf the toggle lable */
+	
 	.toggle {
 		display: block;
 		padding: 5px 15px;
@@ -290,7 +276,7 @@ li > a:only-child:after { content: ''; }
 		background-color: #fff;
 	}
 
-	/* Display Dropdown when clicked on Parent Lable */
+	
 	[id^=drop]:checked + ul {
 		display: block;
 		background: #fff;
@@ -299,7 +285,6 @@ li > a:only-child:after { content: ''; }
 		text-align: center;
 	}
 
-	/* Change menu item's width to 100% */
 	nav ul li {
 		display: block;
 		width: 100%;
@@ -347,21 +332,21 @@ li > a:only-child:after { content: ''; }
 	ul.inner-ul{
 		padding: 0!important;
 	}
-	/* Hide Dropdowns by Default */
+	
 	nav ul ul {
 		float: none;
 		position:static;
 		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
+		
 	}
 		
-	/* Hide menus on hover */
+	
 	nav ul ul li:hover > ul,
 	nav ul li:hover > ul {
 		display: none;
 	}
 		
-	/* Fisrt Tier Dropdown */
+	
 	nav ul ul li {
 		display: block;
 		width: 100%;
@@ -370,8 +355,6 @@ li > a:only-child:after { content: ''; }
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
-
 	}
 
 }
@@ -388,9 +371,7 @@ li > a:only-child:after { content: ''; }
     font-size: 25px;
     color: #fff;
 }
-/*-- //header --*/
 
-/* banner style */
 .banner_w3lspvt {
     position: relative;
     z-index: 1;
@@ -490,13 +471,7 @@ li > a:only-child:after { content: ''; }
     color: #fff;
 }
 
-/*-- //banner style --*/
 
-/* .bg{
-	background: url(../images/1.jpg) no-repeat center;
-} */
-
-/*-- about --*/
 h3.heading {
     font-size: 40px;
     letter-spacing: 2px;
@@ -529,9 +504,7 @@ p.about-text {
 .feature-grids  p {
     letter-spacing: 1px;
 }
-/*-- //about --*/
 
-/*-- core grids --*/
 .core-grids p {
     letter-spacing: 1px;
 }
@@ -542,9 +515,7 @@ p.about-text {
     font-weight: 600;
     text-transform: uppercase;
 }
-/*-- //core grids --*/
 
-/*-- works --*/
 .serives-agile {
     background: #009f4d;
 }
@@ -575,9 +546,7 @@ p.about-text {
     line-height: 1.8em;
     font-size: 16px;
 }
-/*-- //works --*/
 
-/*-- bg --*/
 .background-img {
     background: url(../images/5.jpg) no-repeat center;
     background-size: cover;
@@ -610,9 +579,7 @@ p.about-text {
     text-transform: uppercase;
     color: #fff;
 }
-/*-- //bg --*/
 
-/*-- blog info --*/
 
 .blog-grids {
     margin-bottom: 120px;
@@ -645,10 +612,7 @@ p.about-text {
 .blog-info h4 span.fa {
     color: #009f4d;
 }
-/*-- //blog info --*/
 
-
-/*--  text --*/
 .text {
     background: url(../images/2.jpg) no-repeat center;
     background-size: cover;
@@ -698,16 +662,14 @@ p.about-text {
     background: #009f4d;
     display: inline-block;
 }
-/*--  //text --*/
 
-/*-- footer --*/
 
 p.footer-para {
     max-width: 650px;
     font-size: 15px;
 }
 
-/*-- footer logo --*/
+
 .logo2 {
     position: relative;
 }
@@ -723,9 +685,7 @@ p.footer-para {
 	color: #e8cd30;
 }
 
-/*-- //footer logo --*/
 
-/*-- footer home dashboard about  --*/
 .homelogo {
     position: relative;
 }
@@ -741,10 +701,6 @@ p.footer-para {
 	color: #e8cd30;
 }
 
-/*-- //footer logo --*/
-
-
-/*-- social icons --*/
 .footercopy-social ul li,
 .contact-left-footer ul li {
     display: inline-block;
@@ -768,9 +724,7 @@ footer{
     -ms-transition: 0.5s all;
 }
 
-/*-- //social icons --*/
 
-/*-- address --*/
 .contact-left-footer ul li p span.fa {
     color: #aaa;
 }
@@ -782,9 +736,7 @@ footer{
     font-weight: 600;
 }
 
-/*-- //address --*/
 
-/*-- copyright --*/
 .w3l-copy p {
     letter-spacing: 1px;
 }
@@ -792,10 +744,7 @@ footer{
 .w3l-copy p a {
     color: #aaa;
 }
-/*-- //copyright --*/
-/*-- //footer --*/
 
-/*-- inner banner --*/
 .inner-banner{
     background: url(../images/2.jpg) no-repeat center;
     background-size: cover;
@@ -812,9 +761,7 @@ footer{
     opacity: 0.6;
     background: #000;
 }
-/*-- //inner banner --*/
 
-/*-- about page --*/
 .about-left h5 {
     color: #009f4d;
     font-weight: 600;
@@ -869,7 +816,6 @@ footer{
 }
 
 
-/* about bottom */
 
 h4.abt-text {
     font-size: 2.5em;
@@ -891,9 +837,7 @@ h4.abt-text {
     display: inline-block;
 	margin-top:10px;
 }
-/* //about bottom */
 
-/* stats */
 section.w3_stats {
     background: url(../images/1.jpg) no-repeat center;
     background-size: cover;
@@ -919,9 +863,6 @@ p.count-text {
 	color: #fff;
 }
 
-/* //stats */
-
-/* news */
 .news{
     background: #f8f9fa;
 }
@@ -963,9 +904,7 @@ p.count-text {
 .feedback-info {
     background: #fff;
 }
-/* //news */
 
-/*-- team --*/
 .team-text h4 {
     font-size: 22px;
     letter-spacing: 2px;
@@ -981,13 +920,7 @@ p.count-text {
     color: #aaa;
     font-size: 14px;
 }
-/*-- //team --*/
 
-/*-- //about page --*/
-
-
-/*-- services page --*/
-/* home grid */
 
 .home-grid {
     padding: 1.5em;
@@ -1036,9 +969,7 @@ h4.home-title {
     margin-bottom: 3em;
 }
 
-/* //home grid */
 
-/* newsletter */
 .newsletter_right_w3.py-5 {
     background: #f8f9fa;
 }
@@ -1097,10 +1028,6 @@ form.newsletter {
     letter-spacing: 2px;
 }
 
-/* //newsletter */
-/*-- //services page --*/
-
-/*-- contact --*/ 
 .contact-left input[type="text"],.contact-left input[type="email"]{
 	border: 1px solid #ccc;
     font-size: 1em;
@@ -1204,10 +1131,8 @@ form.newsletter {
     width: 100%;
     height: 350px;
 }
-/*-- //contact --*/  
 
-/*-- coming sooon page --*/
-.comingsoon {
+/* .comingsoon {
     background: url(../images/comingsoon.jpg) no-repeat center;
     background-size: cover;
     min-height: 250px;
@@ -1220,12 +1145,12 @@ form.newsletter {
 }
 .comingsoon p {
     letter-spacing: 1px;
-}
-
-/*-- //coming sooon page --*/
+} */
 
 
-/*-- move top --*/
+
+
+
 a.move-top {
     width: 34px;
     height: 34px;
@@ -1236,10 +1161,7 @@ a.move-top {
     right: 2%;
     z-index: 0;
 }
-/*-- //move top --*/
 
-
-/*-- Responsive design --*/
 
 @media(max-width:1366px) {
 	.banner-top, .banner-top1, .banner-top2, .banner-top3,.overlay,.overlay1 {
@@ -1652,4 +1574,4 @@ a.move-top {
 	
 }
 
-/*-- //Responsive design --*/
+
