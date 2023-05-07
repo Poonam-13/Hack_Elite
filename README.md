@@ -4,7 +4,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 ## Table of Contents 📖
 - [About](#About)
-- [How to use?](#how to use?)
+- [How to use?](#use)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -47,7 +47,8 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 - 1.Once the project is cloned, navigate to the directory where it was cloned and open the Anaconda Prompt.
 - 2.In the Anaconda Prompt, execute the following block of commands:
-    ```conda create -n Hack_Elite python=3.6.12
+    ``` bash
+    conda create -n Hack_Elite python=3.6.12
     conda activate Hack_Elite
     pip install -r requirements.txt ```
     
