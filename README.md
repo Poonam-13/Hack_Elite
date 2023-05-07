@@ -25,7 +25,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 * Overall, this website aims to leverage technology to enhance agricultural practices by providing crop recommendations, fertilizer suggestions, plant disease identification, and a wide range of information on different crops.
 
-## How to use?
+## How to use? 💻
 
 - The Crop Recommendation system can be utilized by entering the relevant nutrient values of your soil, along with the state and city information. It is important to note that the N-P-K (Nitrogen-Phosphorus-Potassium) values should be entered as ratios. For more detailed instructions, please refer to the provided website. Keep in mind that when entering the city name, it is advisable to use common city names as remote cities or towns might not be available in the Weather API, which is used to fetch humidity and temperature data.
 
@@ -40,7 +40,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
  - Please note that the master branch does not contain the updated code required for deployment. To obtain the updated code for deployment, you can use the following command:
 
- ``` git clone -b deploy https://github.com/Poonam-13/Hack_Elite.git ```
+    ``` git clone -b deploy https://github.com/Poonam-13/Hack_Elite.git ```
  - The deploy branch exclusively includes the necessary code for deploying the application, while the rest of the code, used for training the models and data preparation, can be accessed from the master branch.
 
  - For running the project locally, it is highly recommended to clone the deploy branch. If you have the deploy branch cloned, follow the steps below.
@@ -58,11 +58,11 @@ A farmer website that leverages deep learning and machine learning algorithms to
 - After running app.py, you will be provided with a localhost URL. Open this URL in your web browser to access and utilize the project locally.
 - By following these steps, you can set up and run the project on your system using the provided web browser interface.
 
-## Contributing
+## Contributing✨
 
 Contributions are welcome! If you'd like to contribute to the project.
 
-## 🔗Contact
+## 🔗Contact 📞
 
 If you have any questions, feedback, or suggestions, please feel free to reach out:
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pooo13/)
