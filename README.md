@@ -4,7 +4,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 ## Table of Contents 📖
 - [About](#About)
-- [How to use?] (#How to use?)
+- [How to use?](#how to use?)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -36,7 +36,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 - If farmers wish to access information about additional crops, the Crop Information section provides a way to retrieve extensive details about various crops.
 
 ## Installation
- - Before proceeding with the following steps, ensure that you have Git, Anaconda, or Miniconda installed on your system. You can then clone the entire project using the command git clone https://github.com/Poonam-13/Hack_Elite.git, or alternatively, you can download the code and unzip it.
+ - Before proceeding with the following steps, ensure that you have Git, Anaconda, or Miniconda installed on your system. You can then clone the entire project using the command ``` git clone https://github.com/Poonam-13/Hack_Elite.git ```, or alternatively, you can download the code and unzip it.
 
  - Please note that the master branch does not contain the updated code required for deployment. To obtain the updated code for deployment, you can use the following command:
 
@@ -47,13 +47,13 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 - 1.Once the project is cloned, navigate to the directory where it was cloned and open the Anaconda Prompt.
 - 2.In the Anaconda Prompt, execute the following block of commands:
-    conda create -n Hack_Elite python=3.6.12
+    ```conda create -n Hack_Elite python=3.6.12
     conda activate Hack_Elite
-    pip install -r requirements.txt
+    pip install -r requirements.txt ```
     
  - Finally, run the project using the command:
 
-    python app.py
+   ``` python app.py ```
 - After running app.py, you will be provided with a localhost URL. Open this URL in your web browser to access and utilize the project locally.
 - By following these steps, you can set up and run the project on your system using the provided web browser interface.
 
