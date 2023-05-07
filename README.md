@@ -4,7 +4,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 ## Table of Contents 📖
 - [About](#About)
-- [How to use?](#How to use?)
+- [How to use?] (#How to use?)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Contact](#contact)
