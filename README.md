@@ -4,7 +4,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
 ## Table of Contents 📖
 - [About](#About)
-- [How to use?](#How to use)
+- [How to use?](#How to use?)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -40,7 +40,7 @@ A farmer website that leverages deep learning and machine learning algorithms to
 
  - Please note that the master branch does not contain the updated code required for deployment. To obtain the updated code for deployment, you can use the following command:
 
-  git clone -b deploy https://github.com/Poonam-13/Hack_Elite.git
+ ``` git clone -b deploy https://github.com/Poonam-13/Hack_Elite.git ```
  - The deploy branch exclusively includes the necessary code for deploying the application, while the rest of the code, used for training the models and data preparation, can be accessed from the master branch.
 
  - For running the project locally, it is highly recommended to clone the deploy branch. If you have the deploy branch cloned, follow the steps below.
